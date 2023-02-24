@@ -10,7 +10,6 @@ import Widgets from './Components/Widgets';
 function App() {
   return (
     <div className="app">
-      <h1>Hello World</h1>
 
       {/* HEADER  */}
       <Header />
@@ -26,7 +25,7 @@ function App() {
       {/* WIDGETS */}
       <Widgets />
 
-      
+
     </div>
   );
 }
