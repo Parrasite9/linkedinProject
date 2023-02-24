@@ -52,3 +52,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 - react redux (npx create-react-app projectName --template redux)
 - MUI CORE (npm install @mui/material @emotion/react @emotion/styled)
 - MUI ICONS (npm install @mui/icons-material)
+- firebase (npm i firebase)
