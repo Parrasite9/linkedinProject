@@ -1,11 +1,15 @@
+import { Avatar } from '@mui/material';
 import React from 'react'
 import '../CSS/HeaderOption.css';
 
-function HeaderOption({Icon, title}) { //THE REASON ICON IS CAPITALIZED IS BECAUSE IT IS A COMPONENT
+function HeaderOption({Icon, title, avatar}) { //THE REASON ICON IS CAPITALIZED IS BECAUSE IT IS A COMPONENT
   return (
     <div className='headerOption'>
       {Icon && <Icon className='headerOption_Icon' />}
-      <h3 className='headerOption_title'>{title}</h3>
+      {avatar && (
+        <Avatar className="headerOption_Icon" src={avatar} />
+      )}
+      <h3 className='headerOption_Title'>{title}</h3>
     </div>
   )
 }
