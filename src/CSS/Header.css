@@ -2,17 +2,17 @@
     display: flex;
 }
 
-.headerLeft {
+.header_Left {
     display: flex;
 }
 
-.headerLeft > img {
+.header_Left > img {
     object-fit: contain;
     height: 40px;
     margin-right: 10px;
 }
 
-.headerSearch {
+.header_Search {
     padding: 10px;
     display: flex;
     align-items: center;
@@ -22,12 +22,12 @@
     background-color: #eef3f8;
 }
 
-.headerSearch > input {
+.header_Search > input {
     outline: none;
     border: none;
     background: none;
 }
 
-.headerRight {
-    
+.header_Right {
+
 }
