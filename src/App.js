@@ -6,6 +6,16 @@ function App() {
   return (
     <div className="app">
       <h1>Hello World</h1>
+
+      {/* HEADER  */}
+      
+
+
+
+      {/* APP BODY */}
+      {/* SIDEBAR */}
+      {/* FEED */}
+      {/* WIDGETS */}
     </div>
   );
 }
