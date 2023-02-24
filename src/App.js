@@ -17,11 +17,11 @@ function App() {
       <div className="app_body">
         <Sidebar />
 
-        <AppBody />
+        {/* <AppBody /> */}
 
         <Feed />
 
-        <Widgets />
+        {/* <Widgets /> */}
               
       </div>
 
