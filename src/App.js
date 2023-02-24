@@ -15,15 +15,25 @@ function App() {
       <Header />
 
 
+      <div className="app_body">
+        {/* SIDEBAR */}
+        <Sidebar />
 
-      {/* APP BODY */}
-      <AppBody />
-      {/* SIDEBAR */}
-      <Sidebar />
-      {/* FEED */}
-      <Feed />
-      {/* WIDGETS */}
-      <Widgets />
+
+        {/* APP BODY */}
+        <AppBody />
+
+
+        {/* FEED */}
+        <Feed />
+
+
+        {/* WIDGETS */}
+        <Widgets />
+              
+      </div>
+
+
 
 
     </div>
