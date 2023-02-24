@@ -3,7 +3,7 @@ import '../CSS/AppBody.css';
 
 function AppBody() {
   return (
-    <div>
+    <div className='appBody'>
             THIS IS APPBODY
     </div>
   )

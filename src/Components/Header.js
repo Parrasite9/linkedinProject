@@ -7,9 +7,8 @@ import SearchIcon from '@mui/icons-material/Search';
 function Header() {
   return (
     <div className='header'>
-      THIS IS HEADER
       <div className="headerLeft">
-        <img />
+        <img src='https://i.imgur.com/YdwX313.png' alt='' />
         <div className="headerSearch">
             <SearchIcon />
             <input type="text" />
