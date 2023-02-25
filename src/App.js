@@ -1,5 +1,5 @@
 import React from 'react';
-import { Counter } from './features/counter/Counter';
+// import { Counter } from './features/Counter';
 import './App.css';
 import Header from './Components/Header';
 import AppBody from './Components/AppBody';
@@ -16,10 +16,10 @@ function App() {
 
       <div className="app_body">
         <Sidebar />
+        <Feed />
 
         {/* <AppBody /> */}
 
-        <Feed />
 
         {/* <Widgets /> */}
               
