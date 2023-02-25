@@ -18,7 +18,7 @@ function Header() {
         <img src='https://i.imgur.com/YdwX313.png' alt='' />
         <div className="header_Search">
             <SearchIcon />
-            <input type="text" />
+            <input type="text" placeholder='search' />
         </div>
       </div>
       <div className="header_Right">
