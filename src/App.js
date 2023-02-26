@@ -55,7 +55,7 @@ function App() {
         {/* <AppBody /> */}
 
 
-        {/* <Widgets /> */}
+        <Widgets />
               
       </div>
 
