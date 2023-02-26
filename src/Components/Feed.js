@@ -11,8 +11,13 @@ import { PostAddSharp } from '@mui/icons-material'; // import the PostAddSharp i
 import { db } from '../Firebase/Firebase'; // import the Firebase instance from Firebase.js
 // import firebase from 'firebase'
 import { serverTimestamp } from '@firebase/firestore'; // import the serverTimestamp function from the Firestore module
+import { useSelector } from 'react-redux';
+import { selectUser } from '../features/userSlice';
 
 function Feed() {
+
+  const user = useSelector(selectUser)
+
   const [post, setPost] = useState([]); // initialize the state variable post to an empty array
   const [input, setInput] = useState(''); // initialize the state variable input to an empty string
   
@@ -31,10 +36,10 @@ function Feed() {
     e.preventDefault(); // prevent the default form submission behavior
     
     db.collection('posts').add({ // add a new document to the 'posts' collection in Firestore with the following data
-      name: 'Isaiah Johnson',
-      description: 'This is a test description',
+      name: user.displayName,
+      description: user.email,
       message: input,
-      photoURL: '',
+      photoURL:  user.photoUrl || "",
       timestamp: serverTimestamp(),
     })
 
