@@ -10,8 +10,21 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 // MUI ICONS 
 import SearchIcon from '@mui/icons-material/Search';
 import HeaderOption from './HeaderOption';
+import { useDispatch, useSelector } from 'react-redux';
+import { auth } from '../Firebase/Firebase';
+import { logout, selectUser } from '../features/userSlice';
 
 function Header() {
+
+  const user = useSelector(selectUser)
+
+  const dispatch = useDispatch()
+
+  const logoutOfApp = () => {
+    dispatch(logout())
+    auth.signOut()
+  }
+
   return (
     <div className='header'>
       <div className="header_Left">
@@ -27,7 +40,7 @@ function Header() {
         <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
         <HeaderOption Icon={ChatIcon} title="Messaging" />
         <HeaderOption Icon={NotificationsIcon} title="Notification" />
-        <HeaderOption avatar="https://i.imgur.com/pzhXqfp.png" title="Me" />
+        <HeaderOption avatar={true} title="Me" onClick={logoutOfApp} />
       </div>
     </div>
   )

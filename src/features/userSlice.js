@@ -20,18 +20,18 @@ export const userSlice = createSlice({
   }, // 2:02:00
   reducers: {
     login: (state, action) => {
-      state.value += action.payload;
+      state.user = action.payload;
     },
     // Use the PayloadAction type to declare the contents of `action.payload`
     logout: (state) => {
-      state.user += null;
+      state.user = null;
     },
   },
 });
 
 export const { login, logout } = userSlice.actions;
 
-export const selectUser = (state) => state.user.value;
+export const selectUser = (state) => state.user.user;
 
 
 export default userSlice.reducer;
