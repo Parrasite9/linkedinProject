@@ -51,22 +51,13 @@ function App() {
         <div className="app_body">
         <Sidebar />
         <Feed />
-
-        {/* <AppBody /> */}
-
-
         <Widgets />
               
       </div>
 
       )}
 
-
-
-
-
-
-
+      
     </div>
   );
 }
