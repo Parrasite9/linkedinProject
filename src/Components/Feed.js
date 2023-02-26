@@ -13,6 +13,8 @@ import { db } from '../Firebase/Firebase'; // import the Firebase instance from 
 import { serverTimestamp } from '@firebase/firestore'; // import the serverTimestamp function from the Firestore module
 import { useSelector } from 'react-redux';
 import { selectUser } from '../features/userSlice';
+import FlipMove from 'react-flip-move';
+
 
 function Feed() {
 
@@ -69,9 +71,11 @@ function Feed() {
 
 
       {/* POSTS  */}
-      {post.map(({id, data: { name, description, message, photoURL }}) => (
-        <Post key={id} name={name} description={description} message={message} photoURL={photoURL} />
-    ))}
+      <FlipMove>
+        {post.map(({id, data: { name, description, message, photoURL }}) => (
+          <Post key={id} name={name} description={description} message={message} photoURL={photoURL} />
+      ))}
+      </FlipMove>
 
     </div>
   )

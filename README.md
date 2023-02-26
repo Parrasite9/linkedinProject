@@ -53,3 +53,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 - MUI CORE (npm install @mui/material @emotion/react @emotion/styled)
 - MUI ICONS (npm install @mui/icons-material)
 - firebase (npm i firebase)
+- React Flip Move (npm i react-flip-move)
